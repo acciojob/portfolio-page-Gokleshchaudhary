@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/200" alt="Your Name" id="profile-img">
+                </div>
+                <h1>Your Name</h1>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
 
-    <!-- Image Section -->
-    <img src="path_to_your_image.jpg" alt="Your Name" width="200">
+        <main>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>React Native, Flutter</p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Name Section -->
-    <h1>Your Name</h1>
-
-    <!-- LinkedIn Profile Link -->
-    <a href="your_linkedin_profile_url" target="_blank">LinkedIn Profile</a>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>List your skills here: HTML, CSS, JavaScript, etc.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 Description</li>
-            <li>Project 2 Description</li>
-            <li>Project 3 Description</li>
-        </ul>
-    </section>
-
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <ul>
+                        <li class="project-card">
+                            <h3>E-commerce Website</h3>
+                            <p>A full-stack e-commerce platform built with React and Node.js</p>
+                        </li>
+                        <li class="project-card">
+                            <h3>Weather App</h3>
+                            <p>Real-time weather application using Weather API</p>
+                        </li>
+                        <li class="project-card">
+                            <h3>Task Manager</h3>
+                            <p>A mobile task management app built with React Native</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
