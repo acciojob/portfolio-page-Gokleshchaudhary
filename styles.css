@@ -26,38 +26,25 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .profile-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 h1 {
     font-size: 2.5rem;
     color: #2c3e50;
-    margin: 1rem 0;
 }
 
-.social-links {
-    margin-top: 1rem;
-}
-
-.linkedin-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+.social-links a {
+    display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #0077b5;
     color: white;
@@ -66,7 +53,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.linkedin-link:hover {
+.social-links a:hover {
     background-color: #005582;
 }
 
@@ -81,44 +68,33 @@ h2 {
     text-align: center;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.skill-card {
+.skill-item {
     background: white;
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 1rem 2rem;
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
     transition: transform 0.3s;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
+.skill-item:hover {
+    transform: translateY(-3px);
 }
 
-.skill-card i {
-    font-size: 2.5rem;
-    color: #3498db;
-    margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.projects-grid ul {
+.projects-list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.project-card {
+.project-item {
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -126,11 +102,11 @@ h2 {
     transition: transform 0.3s;
 }
 
-.project-card:hover {
+.project-item:hover {
     transform: translateY(-5px);
 }
 
-.project-card h3 {
+.project-item h3 {
     color: #2c3e50;
     margin-bottom: 1rem;
 }
@@ -144,8 +120,7 @@ h2 {
         font-size: 2rem;
     }
 
-    .skills-grid,
-    .projects-grid ul {
+    .projects-list {
         grid-template-columns: 1fr;
     }
 }
